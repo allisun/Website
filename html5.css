@@ -1,0 +1,4 @@
+/* HTML5 tags */
+header, section, footer, nav, article{
+	display:block
+}

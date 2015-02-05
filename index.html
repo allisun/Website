@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Allison Arteaga</title>
+		<link rel="shortcut icon" href="images/icon.png">
+		<link rel="stylesheet" type="text/css" href="html5.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+		<!--[if IE]><script src="http://html5shiv.google.code.com/svn/trunk/html5.js"></script><![endif]-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+		
+	</head>
+	<body>
+		<header id="header"><img src="images/header.jpg" alt="allison arteaga"></header>
+			<div class="nav">
+				<ul>
+				<li id="aboutButton">About</li>
+				<li id="workButton">Work</li>
+				<li id="contactButton">Resume</li>
+				</ul>
+			</div>
+			<div class="aboutPage">
+				<div class="arrow"></div>
+				<div class="panel">
+					<img src="images/profile.jpg" alt="picture of me" id="round">
+						<p><strong>Allison Arteaga</strong> is a freshman at <strong>Cornell University</strong>, majoring in Information Science and minoring in Computing in the Arts. She works as an Undergraduate Researcher and a graphic designer at Cornell. Allison is a self-taught programmer, graphic designer, and believer in the oxford comma.</p>
+					<div class="icons">
+						<a href="mailto:aa2229@cornell.edu" target="_blank"><img src="images/mailicon.jpg" alt="e-mail me"></a>
+						<a href="http://www.linkedin.com/pub/allison-arteaga/a0/73b/848" target="_blank"><img src="images/linkedicon.jpg" alt="linkedin"></a>
+						<a href="http://blogs.cornell.edu/allisonarteaga/" target="_blank"><img src="images/blogicon.jpg" alt="blog"></a>
+						<a href="https://www.behance.net/allisonarteaga" target="_blank"><img src="images/behanceicon.jpg" alt="behance"></a>
+						<a href="https://github.com/allisun" target="_blank"><img src="images/giticon.jpg" alt="github"></a>
+					</div>
+				</div> 
+			</div>
+
+			<div class="workPage">
+				<div class="arrow"></div>
+				<div class="panel">
+						<div id="workboxes">
+							<a href="http://oadi.cornell.edu" id="workresearch" class="workbox" target="_blank">
+								<h1>Research</h1>
+								<p>Currently conducting research as a OADI Research Scholar on the history of Cornell's diversity initiatives towards minorities in the STEM fields.</p>
+							</a>
+							<a href="http://github.com/allisun" id="workcode" class="workbox" target="_blank">
+								<h1>Projects</h1>
+								<p>Independent coding projects in Python, HTML/CSS, PHP and JS. Click for Codeacademy profile.</p>
+							</a>
+							<a href="http://behance.net/allisonarteaga" id="workart" class="workbox" target="_blank">
+								<h1>Portfolio</h1>
+								<p>Multi-Media artwork in ink, charcoal, oil paint and colored pencil.</p>
+							</a>
+					</div>
+				</div> 
+			</div>
+
+			<div class="contactPage">
+				<div class="arrow"></div>
+					<div class="panel">
+						<div id="resumeboxes">
+							<div class="resumebox">
+								<h1>Employment</h1>
+								<p>OADI Research Scholar</p>
+								<p>CCP Marketing: Graphic Designer</p>
+							</div>
+
+							<div class="resumebox">
+								<h1>Code</h1>
+									<p><span style="color:#a9a0a1">Web development</span>: HTML, CSS, PHP, JS</p>
+										<div class="meter">
+											<div></div>
+										</div>
+									<p><span style="color:#a9a0a1">Language</span>: Python, Java</p>
+										<div class="meter">
+											<div></div>
+										</div>
+									<p><span style="color:#a9a0a1">Software/hardware</span>: Arduino</p>
+										<div class="meter">
+											<div></div>
+										</div>
+							</div>
+
+							<div class="resumebox">
+								<h1>Clubs</h1>
+								<ul>
+									<li>Society for Hispanice Engineers
+									<em>Member</em></li>
+									<li>Women in Computing Club <em>Member</em></li>
+							</div>
+
+							
+							<div class="resumebox">
+								<h1>Software</h1>
+									<p>Adobe Creative Suite</p>
+									<p>Data: SPSS, arcGIS, R</p>
+									<p>Research: Zotero, Endnote<p>
+							</div>
+						</div>
+				</div> 
+			</div>
+
+			<nav id="footer">
+				<p><span id="lineBreak">|</span> Allison Arteaga <span id="lineBreak">|</span> <a href="mailto:aa2229@cornell.edu">Contact</a> <span id="lineBreak">|</span></p>
+			</nav>
+
+			<script>
+			$(function(){
+
+				$('.workPage').hide();
+
+				$('.contactPage').hide();
+
+				$('#aboutButton').on('click', function() {
+					$('.aboutPage').slideToggle(500)
+					$('.workPage').hide(500)
+					$('.contactPage').hide(500);
+				});
+
+				$('#workButton').on('click', function() {
+					$('.workPage').slideToggle(500)
+					$('.contactPage').hide(500)
+					$('.aboutPage').hide(500);
+				});
+
+				$('#contactButton').on('click', function() {
+					$('.contactPage').slideToggle(500)
+					$('.aboutPage').hide(500)
+					$('.workPage').hide(500);
+				});
+
+			});
+		</script>
+</body>
+</html>
